@@ -1,0 +1,176 @@
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .signboard {
+        width: 100%;
+        height: 225px;
+        position: relative;
+        animation: swinging 1.5s ease-in-out infinite alternate;
+        transform-origin: 200px 13px;
+    }
+    
+    .sign {
+        width: 75%;
+        height: 170px;
+        margin-left: 12.5%;
+        /* background: burlywood; */
+        background-image: url("../images/board.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .notice {
+        width: 80%;
+        height: 130px;
+        margin-top: 25px;
+        margin-left: 10%;
+    }
+    
+    .strings {
+        width: 20%;
+        height: 75px;
+        border: 5px solid rgb(98, 69, 68);
+        position: absolute;
+        border-right: none;
+        border-bottom: none;
+        transform: rotate(45deg);
+        top: 32px;
+        left: 40%;
+    }
+    
+    .pin {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: absolute;
+    }
+    
+    .pin.top {
+        background: rgb(192, 192, 192);
+        left: 48.8%;
+        top: 10px;
+    }
+    
+    .pin.left,
+    .pin.right {
+        background: rgb(98, 69, 68);
+        top: 68px;
+        box-shadow: 0 2px 0 rgba(255, 255, 255, 0.3);
+    }
+    
+    .pin.left {
+        left: 33.8%;
+    }
+    
+    .pin.right {
+        right: 31.8%;
+    }
+    
+    @keyframes swinging {
+        from {
+            transform: rotate(5deg);
+        }
+    
+        to {
+            transform: rotate(-5deg);
+        }
+    }
+
+    div.banner {
+        padding-top: 80px;
+    }
+
+    div.title {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        font-size: 24px;
+        color: #fefefe;
+        text-shadow: 0 0 0.5em #0ae642, 0 0 0.2em #5c5c5c;
+    }
+
+    div.message {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 24px;
+        color: #fff;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+        animation: pulsate 2.5s infinite alternate;
+    }
+
+    @keyframes pulsate {
+        100% {
+          text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #0fa,
+            0 0 80px #0fa,
+            0 0 90px #0fa,
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+        }
+        0% {
+          text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #0fa,
+            0 0 45px #0fa,
+            0 0 55px #0fa,
+            0 0 70px #0fa,
+            0 0 80px #0fa;
+        }
+    }
+
+    div.button {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .button a{
+        color: #ffffff;
+        padding: 8px 24px 8px 24px;
+        text-decoration: none;
+        background: no-repeat 189px 17px rgb(32, 93, 244);
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    
+    .button a:hover{
+        border:3px solid #99cc33;
+        color:#99cc33;
+        background:  no-repeat 186px 14px #ffffff;
+        text-decoration: none;
+    }
+}
