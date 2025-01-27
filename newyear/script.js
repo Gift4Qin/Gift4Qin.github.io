@@ -188,8 +188,7 @@ function triggerFireworks() {
 
 // 倒计时逻辑，假设倒计时结束后触发烟花
 const countdownElement = document.getElementById("countdown");
-//const targetDate = new Date("Jan 28, 2025 23:59:59").getTime();
-const targetDate = new Date("Jan 27, 2025 14:40:00").getTime();
+const targetDate = new Date("Jan 28, 2025 23:59:59").getTime();
 
 // 倒计时更新函数，用于显示距离目标日期的时间并在到达时触发烟花
 function updateCountdown() {
